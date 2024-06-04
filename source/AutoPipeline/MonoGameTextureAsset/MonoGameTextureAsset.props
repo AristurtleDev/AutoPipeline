@@ -1,0 +1,72 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<!-- 
+	###################################################################################################################
+	###	Adds MonoGameTextureAsset as a Build Action type in Visual Studio
+	###################################################################################################################
+	-->
+	<ItemGroup>
+		<AvailableItemName Include="MonoGameTextureAsset" />
+	</ItemGroup>
+
+	<!--
+	###################################################################################################################
+	###	Defines the default file extensions that will be associated with this build type.
+	###################################################################################################################
+	-->
+	<ItemGroup>
+		<MonoGameTextureAsset Description="Bitmap Image File" Include="$(ProjectDir)\Content\**\*.bmp" />
+		<MonoGameTextureAsset Description="Dr Halo CUT" Include="$(ProjectDir)\Content\**\*.cut" />
+		<MonoGameTextureAsset Description="Direct Draw Surface" Include="$(ProjectDir)\Content\**\*.dds" />
+		<MonoGameTextureAsset Description="Raw Fax G3" Include="$(ProjectDir)\Content\**\*.g3" />
+		<MonoGameTextureAsset Description="RGBE" Include="$(ProjectDir)\Content\**\*.hdr" />
+		<MonoGameTextureAsset Description="Graphics Interchange Format" Include="$(ProjectDir)\Content\**\*.gif" />
+		<MonoGameTextureAsset Description="Microsoft Windows Icon" Include="$(ProjectDir)\Content\**\*.ico" />
+		<MonoGameTextureAsset Description="Interchange File Format" Include="$(ProjectDir)\Content\**\*.iff" />
+		<MonoGameTextureAsset Description="JBIG" Include="$(ProjectDir)\Content\**\*.jbg; $(ProjectDir)\Content\**\*.jbig" />
+		<MonoGameTextureAsset Description="JPEG" Include="$(ProjectDir)\Content\**\*.jng; $(ProjectDir)\Content\**\*.jpg; $(ProjectDir)\Content\**\*.jpeg; $(ProjectDir)\Content\**\*.jpe; $(ProjectDir)\Content\**\*.jif; $(ProjectDir)\Content\**\*.jfif; $(ProjectDir)\Content\**\*.jfi" />
+		<MonoGameTextureAsset Description="JPEG 2000" Include="$(ProjectDir)\Content\**\*.jp2; $(ProjectDir)\Content\**\*.j2k; $(ProjectDir)\Content\**\*.jpf; $(ProjectDir)\Content\**\*.jpx; $(ProjectDir)\Content\**\*.jpm; $(ProjectDir)\Content\**\*.mj2" />
+		<MonoGameTextureAsset Description="JPEG XR" Include="$(ProjectDir)\Content\**\*.jxr; $(ProjectDir)\Content\**\*.hdp; $(ProjectDir)\Content\**\*.wdp" />
+		<MonoGameTextureAsset Description="Koala" Include="$(ProjectDir)\Content\**\*.koa; $(ProjectDir)\Content\**\*.gg" />
+		<MonoGameTextureAsset Description="Kodak PhotoCD" Include="$(ProjectDir)\Content\**\*.pcd" />
+		<MonoGameTextureAsset Description="Multiple-Image Network Graphics" Include="$(ProjectDir)\Content\**\*.mng" />
+		<MonoGameTextureAsset Description="Personal Computer Exchange" Include="$(ProjectDir)\Content\**\*.pcx" />
+		<MonoGameTextureAsset Description="Netpbm" Include="$(ProjectDir)\Content\**\*.pbm; $(ProjectDir)\Content\**\*.ppm; $(ProjectDir)\Content\**\*.pnm" />
+		<MonoGameTextureAsset Description="Printer Font Metrics" Include="$(ProjectDir)\Content\**\*.pfm" />
+		<MonoGameTextureAsset Description="ortable Network Graphics" Include="$(ProjectDir)\Content\**\*.png" />
+		<MonoGameTextureAsset Description="PICT" Include="$(ProjectDir)\Content\**\*.pict; $(ProjectDir)\Content\**\*.pct; $(ProjectDir)\Content\**\*.pic" />
+		<MonoGameTextureAsset Description="Photoshop" Include="$(ProjectDir)\Content\**\*.psd" />
+		<MonoGameTextureAsset Description="RAW" Include="$(ProjectDir)\Content\**\*.3fr; $(ProjectDir)\Content\**\*.ari; $(ProjectDir)\Content\**\*.arw; $(ProjectDir)\Content\**\*.bay; $(ProjectDir)\Content\**\*.crw; $(ProjectDir)\Content\**\*.cr2; $(ProjectDir)\Content\**\*.cap;
+												   $(ProjectDir)\Content\**\*.dcs; $(ProjectDir)\Content\**\*.dcr; $(ProjectDir)\Content\**\*.dng; $(ProjectDir)\Content\**\*.drf; $(ProjectDir)\Content\**\*.eip; $(ProjectDir)\Content\**\*.erf; $(ProjectDir)\Content\**\*.fff;
+												   $(ProjectDir)\Content\**\*.iiq; $(ProjectDir)\Content\**\*.k25; $(ProjectDir)\Content\**\*.kdc; $(ProjectDir)\Content\**\*.mdc; $(ProjectDir)\Content\**\*.mef; $(ProjectDir)\Content\**\*.mos; $(ProjectDir)\Content\**\*.mrw;
+												   $(ProjectDir)\Content\**\*.nef; $(ProjectDir)\Content\**\*.nrw; $(ProjectDir)\Content\**\*.obm; $(ProjectDir)\Content\**\*.orf; $(ProjectDir)\Content\**\*.pef; $(ProjectDir)\Content\**\*.ptx; $(ProjectDir)\Content\**\*.pxn;
+												   $(ProjectDir)\Content\**\*.r3d; $(ProjectDir)\Content\**\*.raf; $(ProjectDir)\Content\**\*.raw; $(ProjectDir)\Content\**\*.rwl; $(ProjectDir)\Content\**\*.rw2; $(ProjectDir)\Content\**\*.sr2; $(ProjectDir)\Content\**\*.srf;
+												   $(ProjectDir)\Content\**\*.srw; $(ProjectDir)\Content\**\*.x3f" />
+		<MonoGameTextureAsset Description="Sun RAS" Include="$(ProjectDir)\Content\**\*.ras; $(ProjectDir)\Content\**\*.sun" />
+		<MonoGameTextureAsset Description="Silicon Graphics Image" Include="$(ProjectDir)\Content\**\*.sgi; $(ProjectDir)\Content\**\*.rgba; $(ProjectDir)\Content\**\*.bw; $(ProjectDir)\Content\**\*.int; $(ProjectDir)\Content\**\*.inta" />
+		<MonoGameTextureAsset Description="Truevision TGA/TARGA" Include="$(ProjectDir)\Content\**\*.tga" />
+		<MonoGameTextureAsset Description="Tagged Image File Format" Include="$(ProjectDir)\Content\**\*.tiff; $(ProjectDir)\Content\**\*.tif" />
+		<MonoGameTextureAsset Description="Wireless Application Protocol Bitmap Format" Include="$(ProjectDir)\Content\**\*.wbmp" />
+		<MonoGameTextureAsset Description="WebP" Include="$(ProjectDir)\Content\**\*.webp" />
+		<MonoGameTextureAsset Description="X BitMap" Include="$(ProjectDir)\Content\**\*.xbm" />
+		<MonoGameTextureAsset Description="X PixMap" Include="$(ProjectDir)\Content\**\*.xpm" />
+	</ItemGroup>
+
+	<!--
+	###################################################################################################################
+	###	Defines the default properties used for this content type when building with the MGCB
+	###################################################################################################################
+	-->
+	<ItemDefinitionGroup>
+		<MonoGameTextureAsset>
+			<ColorKeyColor>255,0,255,255</ColorKeyColor>
+			<ColorKeyEnabled>false</ColorKeyEnabled>
+			<GenerateMipMaps>false</GenerateMipMaps>
+			<MakeSquare>false</MakeSquare>
+			<PremultiplyAlpha>false</PremultiplyAlpha>
+			<ResizeToPowerOfTwo>false</ResizeToPowerOfTwo>
+			<TextureFormat>color</TextureFormat>
+		</MonoGameTextureAsset>
+	</ItemDefinitionGroup>
+
+</Project>

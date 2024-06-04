@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+    <PropertyGroup>
+        <SolutionDirectory>$(MSBuildThisFileDirectory)</SolutionDirectory>
+    </PropertyGroup>
+
+    <PropertyGroup>
+	<AutoPipelineVersion>0.0.1</AutoPipelineVersion>
+        <IsPrerelease Condition="'$(IS_PRERELEASE)' != ''">-prerelease</IsPrerelease>
+        <BuildNumber Condition="'$(BUILD_NUMBER)' != ''">.$(BUILD_NUMBER)</BuildNumber>
+        <Version>$(AutoPipelineVersion)$(IsPrerelease)$(BuildNumber)</Version>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Authors>Christopher Whitley and contributors</Authors>
+        <PackageProjectUrl>https://github.com/aristurtledev/autopipeline</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/aristurtledev/autopipeline</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryBranch>develop</RepositoryBranch>
+        <NeutralLanguage>en</NeutralLanguage>
+        <PackageIcon>nuget-logo.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- path must be relative to the individual csproj's not this .targets file -->
+        <None Include="../../images/nuget-logo.png" Pack="true" PackagePath="" />
+        <None Include="../../README.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+</Project>

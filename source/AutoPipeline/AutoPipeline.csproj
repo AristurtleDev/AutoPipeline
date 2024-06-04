@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+		<Description>MSBuild task to automatically build content for MonoGame.</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="AutoPipeline.props" PackagePath="build" />
+		<Content Include="AutoPipeline.targets" PackagePath="build" />
+		<Content Include="MonoGameTextureAsset/MonoGameTextureAsset.props" PackagePath="build/MonoGameTextureAsset"/>
+		<Content Include="MonoGameTextureAsset/MonoGameTextureAsset.targets" PackagePath="build/MonoGameTextureAsset"/>
+	</ItemGroup>
+
+</Project>
