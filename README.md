@@ -63,4 +63,4 @@ The following are known issues that exist either due to a bug or because what's 
 I would like to give a special thanks to [@MrGrak](https://github.com/mrgrak) for letting me use the name AutoPipeline even though he already has a lib for MonoGame called this.
 
 ## License
-MonoGame.Aseprite is licensed under the MIT License. Please refer to the [LICENSE](LICENSE) file for full license text.
+AutoPipeline is licensed under the MIT License. Please refer to the [LICENSE](LICENSE) file for full license text.
