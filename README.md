@@ -33,13 +33,14 @@ The following tables shows the planned features and what's been implemented so f
 
 | Default Importer/Processors | Implemented |
 | --------------------------- | ----------- |
-| Effects                     | ✅           |
+| Effects                     | ❌           |
 | Fbx                         | ❌           |
 | SpriteFont                  | ❌           |
 | H.264 Video                 | ❌           |
 | Mp3                         | ❌           |
 | Ogg                         | ❌           |
 | Open Asset Import Library   | ❌           |
+| Texture                     | ✅           |
 | Wav                         | ❌           |
 | Wmv                         | ❌           |
 | X                           | ❌           |
