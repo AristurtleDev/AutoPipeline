@@ -805,6 +805,6 @@
 
 
 	<Target Name="BuildAssets"
-			DependsOnTargets="BuildTextureAssets;BuildEffectAssets;BuildFbxAssets;BuildSpriteFontAssets;BuildH264Assets;BuildMp3Assets;BuildOggAssets;BuildOpenAssetLibraryAssets;BuildWavAssets;BuildWmaAssets;BuildWmvAssets;BuildDirectXAssets,BuildXmlAssets"
+			DependsOnTargets="BuildTextureAssets;BuildEffectAssets;BuildFbxAssets;BuildSpriteFontAssets;BuildH264Assets;BuildMp3Assets;BuildOggAssets;BuildOpenAssetLibraryAssets;BuildWavAssets;BuildWmaAssets;BuildWmvAssets;BuildDirectXAssets;BuildXmlAssets"
 			BeforeTargets="Build" />
 </Project>
