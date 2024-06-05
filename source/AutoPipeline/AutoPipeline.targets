@@ -5,13 +5,19 @@
 	###################################################################################################################
 	-->
 	<ItemGroup>
+		<AvailableItemName Include="MonoGameDirectXAsset" />
 		<AvailableItemName Include="MonoGameEffectAsset" />
 		<AvailableItemName Include="MonoGameFbxAsset" />
 		<AvailableItemName Include="MonoGameH264Asset" />
 		<AvailableItemName Include="MonoGameMp3Asset" />
 		<AvailableItemName Include="MonoGameOggAsset" />
+		<AvailableItemName Include="MonoGameOpenAssetLibraryAsset" />
 		<AvailableItemName Include="MonoGameSpriteFontAsset" />
 		<AvailableItemName Include="MonoGameTextureAsset" />
+		<AvailableItemName Include="MonoGameWavAsset" />
+		<AvailableItemName Include="MonoGameWmaAsset" />
+		<AvailableItemName Include="MonoGameWmvAsset" />
+		<AvailableItemName Include="MonoGameXmlAsset" />
 	</ItemGroup>
 
 	<!--
@@ -42,11 +48,11 @@
 		<MonoGameTextureAsset Description="PICT" Include="$(ProjectDir)\Content\**\*.pict; $(ProjectDir)\Content\**\*.pct; $(ProjectDir)\Content\**\*.pic" />
 		<MonoGameTextureAsset Description="Photoshop" Include="$(ProjectDir)\Content\**\*.psd" />
 		<MonoGameTextureAsset Description="RAW" Include="$(ProjectDir)\Content\**\*.3fr; $(ProjectDir)\Content\**\*.ari; $(ProjectDir)\Content\**\*.arw; $(ProjectDir)\Content\**\*.bay; $(ProjectDir)\Content\**\*.crw; $(ProjectDir)\Content\**\*.cr2; $(ProjectDir)\Content\**\*.cap;
-												   $(ProjectDir)\Content\**\*.dcs; $(ProjectDir)\Content\**\*.dcr; $(ProjectDir)\Content\**\*.dng; $(ProjectDir)\Content\**\*.drf; $(ProjectDir)\Content\**\*.eip; $(ProjectDir)\Content\**\*.erf; $(ProjectDir)\Content\**\*.fff;
-												   $(ProjectDir)\Content\**\*.iiq; $(ProjectDir)\Content\**\*.k25; $(ProjectDir)\Content\**\*.kdc; $(ProjectDir)\Content\**\*.mdc; $(ProjectDir)\Content\**\*.mef; $(ProjectDir)\Content\**\*.mos; $(ProjectDir)\Content\**\*.mrw;
-												   $(ProjectDir)\Content\**\*.nef; $(ProjectDir)\Content\**\*.nrw; $(ProjectDir)\Content\**\*.obm; $(ProjectDir)\Content\**\*.orf; $(ProjectDir)\Content\**\*.pef; $(ProjectDir)\Content\**\*.ptx; $(ProjectDir)\Content\**\*.pxn;
-												   $(ProjectDir)\Content\**\*.r3d; $(ProjectDir)\Content\**\*.raf; $(ProjectDir)\Content\**\*.raw; $(ProjectDir)\Content\**\*.rwl; $(ProjectDir)\Content\**\*.rw2; $(ProjectDir)\Content\**\*.sr2; $(ProjectDir)\Content\**\*.srf;
-												   $(ProjectDir)\Content\**\*.srw; $(ProjectDir)\Content\**\*.x3f" />
+														 $(ProjectDir)\Content\**\*.dcs; $(ProjectDir)\Content\**\*.dcr; $(ProjectDir)\Content\**\*.dng; $(ProjectDir)\Content\**\*.drf; $(ProjectDir)\Content\**\*.eip; $(ProjectDir)\Content\**\*.erf; $(ProjectDir)\Content\**\*.fff;
+														 $(ProjectDir)\Content\**\*.iiq; $(ProjectDir)\Content\**\*.k25; $(ProjectDir)\Content\**\*.kdc; $(ProjectDir)\Content\**\*.mdc; $(ProjectDir)\Content\**\*.mef; $(ProjectDir)\Content\**\*.mos; $(ProjectDir)\Content\**\*.mrw;
+														 $(ProjectDir)\Content\**\*.nef; $(ProjectDir)\Content\**\*.nrw; $(ProjectDir)\Content\**\*.obm; $(ProjectDir)\Content\**\*.orf; $(ProjectDir)\Content\**\*.pef; $(ProjectDir)\Content\**\*.ptx; $(ProjectDir)\Content\**\*.pxn;
+														 $(ProjectDir)\Content\**\*.r3d; $(ProjectDir)\Content\**\*.raf; $(ProjectDir)\Content\**\*.raw; $(ProjectDir)\Content\**\*.rwl; $(ProjectDir)\Content\**\*.rw2; $(ProjectDir)\Content\**\*.sr2; $(ProjectDir)\Content\**\*.srf;
+														 $(ProjectDir)\Content\**\*.srw; $(ProjectDir)\Content\**\*.x3f" />
 		<MonoGameTextureAsset Description="Sun RAS" Include="$(ProjectDir)\Content\**\*.ras; $(ProjectDir)\Content\**\*.sun" />
 		<MonoGameTextureAsset Description="Silicon Graphics Image" Include="$(ProjectDir)\Content\**\*.sgi; $(ProjectDir)\Content\**\*.rgba; $(ProjectDir)\Content\**\*.bw; $(ProjectDir)\Content\**\*.int; $(ProjectDir)\Content\**\*.inta" />
 		<MonoGameTextureAsset Description="Truevision TGA/TARGA" Include="$(ProjectDir)\Content\**\*.tga" />
@@ -58,27 +64,87 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<MonoGameEffectAsset Include="$(ProjectDir)\Content\**\*.fx" />
+		<MonoGameEffectAsset Description="HLSL Effects Shader" Include="$(ProjectDir)\Content\**\*.fx" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<MonoGameFbxAsset Include="$(ProjectDir)\Content\**\*.fbx" />
+		<MonoGameFbxAsset Description="FilmBox (Autodesk)" Include="$(ProjectDir)\Content\**\*.fbx" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<MonoGameSpriteFontAsset Include="$(ProjectDir)\Content\**\*.spritefont" />
+		<MonoGameSpriteFontAsset Description="Sprite Font Description" Include="$(ProjectDir)\Content\**\*.spritefont" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<MonoGameH264Asset Include="$(ProjectDir)\Content\**\*.mp4" />
+		<MonoGameH264Asset Description="MPEG-4" Include="$(ProjectDir)\Content\**\*.mp4" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<MonoGameMp3Asset Include="$(ProjectDir)\Content\**\*.mp3" />
+		<MonoGameMp3Asset Description="MPEG-3" Include="$(ProjectDir)\Content\**\*.mp3" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<MonoGameOggAsset Include="$(ProjectDir)\Content\**\*.ogg" />
+		<MonoGameOggAsset Description="Ogg" Include="$(ProjectDir)\Content\**\*.ogg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MonoGameOpenAssetLibraryAsset Description="Collada" Include="$(ProjectDir)\Content\**\*.dae" />
+		<MonoGameOpenAssetLibraryAsset Description="glTF" Include="$(ProjectDir)\Content\**\*.gltf; $(ProjectDir)\Content\**\*.glib" />
+		<MonoGameOpenAssetLibraryAsset Description="Blender 3D" Include="$(ProjectDir)\Content\**\*.blend" />
+		<MonoGameOpenAssetLibraryAsset Description="3ds Max 3DS" Include="$(ProjectDir)\Content\**\*.3ds" />
+		<MonoGameOpenAssetLibraryAsset Description="3ds Max ASE" Include="$(ProjectDir)\Content\**\*.ase" />
+		<MonoGameOpenAssetLibraryAsset Description="Wavefront Object" Include="$(ProjectDir)\Content\**\*.obj" />
+		<MonoGameOpenAssetLibraryAsset Description="Industry Foundation Classes (IFC/Step)" Include="$(ProjectDir)\Content\**\*.ifc" />
+		<MonoGameOpenAssetLibraryAsset Description="XGL" Include="$(ProjectDir)\Content\**\*.xgl; $(ProjectDir)\Content\**\*.zgl" />
+		<MonoGameOpenAssetLibraryAsset Description="Standford Polygon Library" Include="$(ProjectDir)\Content\**\*.ply" />
+		<MonoGameOpenAssetLibraryAsset Description="AudoCAD DXF" Include="$(ProjectDir)\Content\**\*.dxf" />
+		<MonoGameOpenAssetLibraryAsset Description="LightWave" Include="$(ProjectDir)\Content\**\*.lwo" />
+		<MonoGameOpenAssetLibraryAsset Description="LightWave Scene" Include="$(ProjectDir)\Content\**\*.lws" />
+		<MonoGameOpenAssetLibraryAsset Description="Modo" Include="$(ProjectDir)\Content\**\*.lxo" />
+		<MonoGameOpenAssetLibraryAsset Description="Sterolithography" Include="$(ProjectDir)\Content\**\*.stl" />
+		<MonoGameOpenAssetLibraryAsset Description="AC3D" Include="$(ProjectDir)\Content\**\*.ac" />
+		<MonoGameOpenAssetLibraryAsset Description="Milkshape 3D" Include="$(ProjectDir)\Content\**\*.ms3d" />
+		<MonoGameOpenAssetLibraryAsset Description="TrueSpace" Include="$(ProjectDir)\Content\**\*.cob; $(ProjectDir)\Content\**\*.scn" />
+		<MonoGameOpenAssetLibraryAsset Description="Biovision BVH" Include="$(ProjectDir)\Content\**\*.bvh" />
+		<MonoGameOpenAssetLibraryAsset Description="CharacterStudio Motion" Include="$(ProjectDir)\Content\**\*.csm" />
+		<MonoGameOpenAssetLibraryAsset Description="Irrlicth Mesh" Include="$(ProjectDir)\Content\**\*.irrmesh" />
+		<MonoGameOpenAssetLibraryAsset Description="Quake I, 3D GameStudio (3DGS)" Include="$(ProjectDir)\Content\**\*.md1" />
+		<MonoGameOpenAssetLibraryAsset Description="Quake II" Include="$(ProjectDir)\Content\**\*.md2" />
+		<MonoGameOpenAssetLibraryAsset Description="Quake III Mesh" Include="$(ProjectDir)\Content\**\*.md3" />
+		<MonoGameOpenAssetLibraryAsset Description="Quake III Map/BSP" Include="$(ProjectDir)\Content\**\*.pk3" />
+		<MonoGameOpenAssetLibraryAsset Description="Return to Castle Wolfenstein" Include="$(ProjectDir)\Content\**\*.mdc" />
+		<MonoGameOpenAssetLibraryAsset Description="Doom 3" Include="$(ProjectDir)\Content\**\*.md5" />
+		<MonoGameOpenAssetLibraryAsset Description="Valve Model" Include="$(ProjectDir)\Content\**\*.smd; $(ProjectDir)\Content\**\*.vta" />
+		<MonoGameOpenAssetLibraryAsset Description="Open Game Engine Exchange" Include="$(ProjectDir)\Content\**\*.ogex" />
+		<MonoGameOpenAssetLibraryAsset Description="Unreal" Include="$(ProjectDir)\Content\**\*.3d" />
+		<MonoGameOpenAssetLibraryAsset Description="BlitzBasic 3D" Include="$(ProjectDir)\Content\**\*.b3d" />
+		<MonoGameOpenAssetLibraryAsset Description="Quick3D" Include="$(ProjectDir)\Content\**\*.q3d; $(ProjectDir)\Content\**\*.q3s" />
+		<MonoGameOpenAssetLibraryAsset Description="Neutral File FOrmat, Sense8 WorldToolKit" Include="$(ProjectDir)\Content\**\*.nff" />
+		<MonoGameOpenAssetLibraryAsset Description="Object File Format" Include="$(ProjectDir)\Content\**\*.off" />
+		<MonoGameOpenAssetLibraryAsset Description="Terragen Terrain" Include="$(ProjectDir)\Content\**\*.ter" />
+		<MonoGameOpenAssetLibraryAsset Description="3D GameStudio (3DGS) Terrain" Include="$(ProjectDir)\Content\**\*.hmp" />
+		<MonoGameOpenAssetLibraryAsset Description="Izware Nendo" Include="$(ProjectDir)\Content\**\*.ndo" />
+		<MonoGameOpenAssetLibraryAsset Description="X PixMap" Include="$(ProjectDir)\Content\**\*.xpm" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MonoGameWavAsset Description="Waveform Audio File" Include="$(ProjectDir)\Content\**\*.wav" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MonoGameWmaAsset Description="Windows Media Audio" Include="$(ProjectDir)\Content\**\*.wma" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MonoGameWmvAsset Description="Windows Media Video" Include="$(ProjectDir)\Content\**\*.wmv" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MonoGameDirectXAsset Description="DirectX Object" Include="$(ProjectDir)\Content\**\*.x" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MonoGameXmlAsset Description="eXtensible Markup Language (XML)" Include="$(ProjectDir)\Content\**\*.xml" />
 	</ItemGroup>
 
 	<!--
@@ -161,10 +227,95 @@
 		</MonoGameOggAsset>
 	</ItemDefinitionGroup>
 
+	<ItemDefinitionGroup>
+		<MonoGameOpenAssetLibraryAsset>
+			<Importer>OpenAssetImporter</Importer>
+			<Processor>ModelProcessor</Processor>
+			<ColorKeyColor>255,255,255,255</ColorKeyColor>
+			<ColorKeyEnabled>True</ColorKeyEnabled>
+			<GenereateMipMaps>True</GenereateMipMaps>
+			<GenerateTangentFrames>False</GenerateTangentFrames>
+			<PremultiplyTextureAlpha>True</PremultiplyTextureAlpha>
+			<PremultiplyVertexColors>True</PremultiplyVertexColors>
+			<ResizeTexturesToPowerOfTwo>False</ResizeTexturesToPowerOfTwo>
+			<RotationX>0</RotationX>
+			<RotationY>0</RotationY>
+			<RotationZ>0</RotationZ>
+			<Scale>1</Scale>
+			<SwapWindingOrder>False</SwapWindingOrder>
+			<TextureFormat>Compressed</TextureFormat>
+		</MonoGameOpenAssetLibraryAsset>
+	</ItemDefinitionGroup>
+
+	<ItemDefinitionGroup>
+		<MonoGameWavAsset>
+			<Importer>WavImporter</Importer>
+			<Processor>SongProcessor</Processor>
+			<Quality>Best</Quality>
+		</MonoGameWavAsset>
+	</ItemDefinitionGroup>
+
+	<ItemDefinitionGroup>
+		<MonoGameWmaAsset>
+			<Importer>WmaImporter</Importer>
+			<Processor>SongProcessor</Processor>
+			<Quality>Best</Quality>
+		</MonoGameWmaAsset>
+	</ItemDefinitionGroup>
+
+	<ItemDefinitionGroup>
+		<MonoGameWmvAsset>
+			<Importer>WmvImporter</Importer>
+			<Processor>VideoProcessor</Processor>
+		</MonoGameWmvAsset>
+	</ItemDefinitionGroup>
+	
+	<ItemDefinitionGroup>
+		<MonoGameDirectXAsset>
+			<Importer>XImporter</Importer>
+			<Processor>ModelProcessor</Processor>
+			<ColorKeyColor>255,255,255,255</ColorKeyColor>
+			<ColorKeyEnabled>True</ColorKeyEnabled>
+			<GenereateMipMaps>True</GenereateMipMaps>
+			<GenerateTangentFrames>False</GenerateTangentFrames>
+			<PremultiplyTextureAlpha>True</PremultiplyTextureAlpha>
+			<PremultiplyVertexColors>True</PremultiplyVertexColors>
+			<ResizeTexturesToPowerOfTwo>False</ResizeTexturesToPowerOfTwo>
+			<RotationX>0</RotationX>
+			<RotationY>0</RotationY>
+			<RotationZ>0</RotationZ>
+			<Scale>1</Scale>
+			<SwapWindingOrder>False</SwapWindingOrder>
+			<TextureFormat>Compressed</TextureFormat>
+		</MonoGameDirectXAsset>
+	</ItemDefinitionGroup>
+
+	<ItemDefinitionGroup>
+		<MonoGameXmlAsset>
+			<Importer>XmlImporter</Importer>
+			<Processor>PassThroughProcessor</Processor>
+		</MonoGameXmlAsset>
+	</ItemDefinitionGroup>
+
 	<!-- 
 	###################################################################################################################
-	###	Sanitize Path String
-	###	Windows is dumb and needs the path strings to contain / instead of \
+	###	BuildMGCBCommand
+	###	A using task that takes the specified input and generates the dotnet mgcb command used to build the specified
+	###	asset.
+	###
+	###	Example
+	###	<BuildMGCBCommand _incrementalParam="true"
+	###					  _buildParam="Content/image.png"
+	###					  _outputDirParam="bin/Content"
+	###					  _intermediateDirParam="obj/Content"
+	###					  _workingDirParam="./"
+	###					  _processingParams="ColorKeyColor=255,0,255,255;ColorKeyEnabled=true"
+	###					  _importerParam="TextureImporter"
+	###					  _processorParam="TextureProcessor">
+	###		<Output PropertyName="MGCBCommand" TaskParameter="OutputString" />
+	###	</BuildMGCBCommand>
+	###
+	###	<Exec Command="$(MGCBCommand)" />
 	###################################################################################################################
 	-->
 	<UsingTask TaskName="BuildMGCBCommand"
@@ -307,9 +458,9 @@
 										  ResizeTexturesToPowerOfTwo=%(MonoGameFbxAssetFiles.ResizeTexturesToPowerOfTwo);
 										  RotationX=%(MonoGameFbxAssetFiles.RotationX);
 										  RotationY=%(MonoGameFbxAssetFiles.RotationY);
-										  RotationZ=%(MonoGameFbxAssetFiles.RotationZ)
-										  Scale=%(MonoGameFbxAssetFiles.Scale)
-										  SwapWindingOrder=%(MonoGameFbxAssetFiles.SwapWindingOrder)
+										  RotationZ=%(MonoGameFbxAssetFiles.RotationZ);
+										  Scale=%(MonoGameFbxAssetFiles.Scale);
+										  SwapWindingOrder=%(MonoGameFbxAssetFiles.SwapWindingOrder);
 										  TextureFormat=%(MonoGameFbxAssetFiles.TextureFormat)" />
 		</ItemGroup>
 
@@ -401,7 +552,6 @@
 		</ItemGroup>
 
 		<ItemGroup>
-			<!-- Construct _processingParams array -->
 			<Mp3ProcessingParams Include="Quality=%(MonoGameMp3AssetFiles.Quality)" />
 		</ItemGroup>
 
@@ -449,8 +599,212 @@
 		<Exec Command="$(MGCBCommand)" />
 	</Target>
 
-	
+	<!-- 
+	###################################################################################################################
+	###	Builds Open Asset Library Assets
+	###################################################################################################################
+	-->
+	<Target Name="BuildOpenAssetLibraryAssets"
+			DependsOnTargets="SetDefaultProperties"
+			Condition="@(MonoGameOpenAssetLibraryAsset) != ''">
+		<ItemGroup>
+			<MonoGameOpenAssetLibraryAssetFiles Include="@(MonoGameOpenAssetLibraryAsset)" />
+		</ItemGroup>
+
+		<ItemGroup>
+			<OpenAssetLibraryProcessingParams Include="ColorKeyColor=%(MonoGameOpenAssetLibraryAssetFiles.ColorKeyColor);
+													   ColorKeyEnabled=%(MonoGameOpenAssetLibraryAssetFiles.ColorKeyEnabled);
+													   GenereateMipMaps=%(MonoGameOpenAssetLibraryAssetFiles.GenereateMipMaps);
+													   GenerateTangentFrames=%(MonoGameOpenAssetLibraryAssetFiles.GenerateTangentFrames);
+													   PremultiplyTextureAlpha=%(MonoGameOpenAssetLibraryAssetFiles.PremultiplyTextureAlpha);
+													   PremultiplyVertexColors=%(MonoGameOpenAssetLibraryAssetFiles.PremultiplyVertexColors);
+													   ResizeTexturesToPowerOfTwo=%(MonoGameOpenAssetLibraryAssetFiles.ResizeTexturesToPowerOfTwo);
+													   RotationX=%(MonoGameOpenAssetLibraryAssetFiles.RotationX);
+													   RotationY=%(MonoGameOpenAssetLibraryAssetFiles.RotationY);
+													   RotationZ=%(MonoGameOpenAssetLibraryAssetFiles.RotationZ);
+													   Scale=%(MonoGameOpenAssetLibraryAssetFiles.Scale);
+													   SwapWindingOrder=%(MonoGameOpenAssetLibraryAssetFiles.SwapWindingOrder);
+													   TextureFormat=%(MonoGameOpenAssetLibraryAssetFiles.TextureFormat)" />
+		</ItemGroup>
+
+		<BuildMGCBCommand _incrementalParam="$(MGCBIncremental)"
+						  _buildParam="%(MonoGameOpenAssetLibraryAssetFiles.Identity)"
+						  _outputDirParam="$(MGCBOutputDir)"
+						  _intermediateDirParam="$(MGCBIntermediateDir)"
+						  _workingDirParam="$(MGCBWorkingDir)"
+						  _processingParams="@(OpenAssetLibraryProcessingParams)"
+						  _importerParam="%(MonoGameOpenAssetLibraryAssetFiles.Importer)"
+						  _processorParam="%(MonoGameOpenAssetLibraryAssetFiles.Processor)">
+			<Output PropertyName="MGCBCommand" TaskParameter="OutputString" />
+		</BuildMGCBCommand>
+
+		<Exec Command="$(MGCBCommand)" />
+	</Target>
+
+	<!-- 
+	###################################################################################################################
+	###	Builds Wav Assets
+	###################################################################################################################
+	-->
+	<Target Name="BuildWavAssets"
+			DependsOnTargets="SetDefaultProperties"
+			Condition="@(MonoGameWavAsset) != ''">
+		<ItemGroup>
+			<MonoGameWavAssetFiles Include="@(MonoGameWavAsset)" />
+		</ItemGroup>
+
+		<ItemGroup>
+			<WavProcessingParams Include="Quality=%(MonoGameWavAssetFiles.Quality)" />
+		</ItemGroup>
+
+		<BuildMGCBCommand _incrementalParam="$(MGCBIncremental)"
+						  _buildParam="%(MonoGameWavAssetFiles.Identity)"
+						  _outputDirParam="$(MGCBOutputDir)"
+						  _intermediateDirParam="$(MGCBIntermediateDir)"
+						  _workingDirParam="$(MGCBWorkingDir)"
+						  _processingParams="@(WavProcessingParams)"
+						  _importerParam="%(MonoGameWavAssetFiles.Importer)"
+						  _processorParam="%(MonoGameWavAssetFiles.Processor)">
+			<Output PropertyName="MGCBCommand" TaskParameter="OutputString" />
+		</BuildMGCBCommand>
+
+		<Exec Command="$(MGCBCommand)" />
+	</Target>
+
+	<!-- 
+	###################################################################################################################
+	###	Builds Wma Assets
+	###################################################################################################################
+	-->
+	<Target Name="BuildWmaAssets"
+			DependsOnTargets="SetDefaultProperties"
+			Condition="@(MonoGameWmaAsset) != ''">
+		<ItemGroup>
+			<MonoGameWmaAssetFiles Include="@(MonoGameWmaAsset)" />
+		</ItemGroup>
+
+		<ItemGroup>
+			<WmaProcessingParams Include="Quality=%(MonoGameWmaAssetFiles.Quality)" />
+		</ItemGroup>
+
+		<BuildMGCBCommand _incrementalParam="$(MGCBIncremental)"
+						  _buildParam="%(MonoGameWmaAssetFiles.Identity)"
+						  _outputDirParam="$(MGCBOutputDir)"
+						  _intermediateDirParam="$(MGCBIntermediateDir)"
+						  _workingDirParam="$(MGCBWorkingDir)"
+						  _processingParams="@(WmaProcessingParams)"
+						  _importerParam="%(MonoGameWmaAssetFiles.Importer)"
+						  _processorParam="%(MonoGameWmaAssetFiles.Processor)">
+			<Output PropertyName="MGCBCommand" TaskParameter="OutputString" />
+		</BuildMGCBCommand>
+
+		<Exec Command="$(MGCBCommand)" />
+	</Target>
+
+	<!-- 
+	###################################################################################################################
+	###	Builds Wmv Assets
+	###################################################################################################################
+	-->
+	<Target Name="BuildWmvAssets"
+			DependsOnTargets="SetDefaultProperties"
+			Condition="@(MonoGameWmvAsset) != ''">
+		<ItemGroup>
+			<MonoGameWmvAssetFiles Include="@(MonoGameWmvAsset)" />
+		</ItemGroup>
+
+		<ItemGroup>
+			<WmvProcessingParams />
+		</ItemGroup>
+
+		<BuildMGCBCommand _incrementalParam="$(MGCBIncremental)"
+						  _buildParam="%(MonoGameWmvAssetFiles.Identity)"
+						  _outputDirParam="$(MGCBOutputDir)"
+						  _intermediateDirParam="$(MGCBIntermediateDir)"
+						  _workingDirParam="$(MGCBWorkingDir)"
+						  _processingParams="@(WmvProcessingParams)"
+						  _importerParam="%(MonoGameWmvAssetFiles.Importer)"
+						  _processorParam="%(MonoGameWmvAssetFiles.Processor)">
+			<Output PropertyName="MGCBCommand" TaskParameter="OutputString" />
+		</BuildMGCBCommand>
+
+		<Exec Command="$(MGCBCommand)" />
+	</Target>
+
+	<!-- 
+	###################################################################################################################
+	###	Builds DirectX Assets
+	###################################################################################################################
+	-->
+	<Target Name="BuildDirectXAssets"
+			DependsOnTargets="SetDefaultProperties"
+			Condition="@(MonoGameDirectXAsset) != ''">
+		<ItemGroup>
+			<MonoGameDirectXAssetFiles Include="@(MonoGameDirectXAsset)" />
+		</ItemGroup>
+
+		<ItemGroup>
+			<DirectXProcessingParams Include="ColorKeyColor=%(MonoGameDirectXAsset.ColorKeyColor);
+											  ColorKeyEnabled=%(MonoGameDirectXAsset.ColorKeyEnabled);
+											  GenereateMipMaps=%(MonoGameDirectXAsset.GenereateMipMaps);
+											  GenerateTangentFrames=%(MonoGameDirectXAsset.GenerateTangentFrames);
+											  PremultiplyTextureAlpha=%(MonoGameDirectXAsset.PremultiplyTextureAlpha);
+											  PremultiplyVertexColors=%(MonoGameDirectXAsset.PremultiplyVertexColors);
+											  ResizeTexturesToPowerOfTwo=%(MonoGameDirectXAsset.ResizeTexturesToPowerOfTwo);
+											  RotationX=%(MonoGameDirectXAsset.RotationX);
+											  RotationY=%(MonoGameDirectXAsset.RotationY);
+											  RotationZ=%(MonoGameDirectXAsset.RotationZ);
+											  Scale=%(MonoGameDirectXAsset.Scale);
+											  SwapWindingOrder=%(MonoGameDirectXAsset.SwapWindingOrder);
+											  TextureFormat=%(MonoGameDirectXAsset.TextureFormat)" />
+		</ItemGroup>
+
+		<BuildMGCBCommand _incrementalParam="$(MGCBIncremental)"
+						  _buildParam="%(MonoGameDirectXAssetFiles.Identity)"
+						  _outputDirParam="$(MGCBOutputDir)"
+						  _intermediateDirParam="$(MGCBIntermediateDir)"
+						  _workingDirParam="$(MGCBWorkingDir)"
+						  _processingParams="@(DirectXProcessingParams)"
+						  _importerParam="%(MonoGameDirectXAssetFiles.Importer)"
+						  _processorParam="%(MonoGameDirectXAssetFiles.Processor)">
+			<Output PropertyName="MGCBCommand" TaskParameter="OutputString" />
+		</BuildMGCBCommand>
+
+		<Exec Command="$(MGCBCommand)" />
+	</Target>
+
+	<!-- 
+	###################################################################################################################
+	###	Builds Xml Assets
+	###################################################################################################################
+	-->
+	<Target Name="BuildXmlAssets"
+			DependsOnTargets="SetDefaultProperties"
+			Condition="@(MonoGameXmlAsset) != ''">
+		<ItemGroup>
+			<MonoGameXmlAssetFiles Include="@(MonoGameXmlAsset)" />
+		</ItemGroup>
+
+		<ItemGroup>
+			<XmlProcessingParams />
+		</ItemGroup>
+
+		<BuildMGCBCommand _incrementalParam="$(MGCBIncremental)"
+						  _buildParam="%(MonoGameXmlAssetFiles.Identity)"
+						  _outputDirParam="$(MGCBOutputDir)"
+						  _intermediateDirParam="$(MGCBIntermediateDir)"
+						  _workingDirParam="$(MGCBWorkingDir)"
+						  _processingParams="@(XmlProcessingParams)"
+						  _importerParam="%(MonoGameXmlAssetFiles.Importer)"
+						  _processorParam="%(MonoGameXmlAssetFiles.Processor)">
+			<Output PropertyName="MGCBCommand" TaskParameter="OutputString" />
+		</BuildMGCBCommand>
+
+		<Exec Command="$(MGCBCommand)" />
+	</Target>
+
+
 	<Target Name="BuildAssets"
-			DependsOnTargets="BuildTextureAssets;BuildEffectAssets;BuildFbxAssets;BuildSpriteFontAssets;BuildH264Assets;BuildMp3Assets;BuildOggAssets"
+			DependsOnTargets="BuildTextureAssets;BuildEffectAssets;BuildFbxAssets;BuildSpriteFontAssets;BuildH264Assets;BuildMp3Assets;BuildOggAssets;BuildOpenAssetLibraryAssets;BuildWavAssets;BuildWmaAssets;BuildWmvAssets;BuildDirectXAssets,BuildXmlAssets"
 			BeforeTargets="Build" />
 </Project>
