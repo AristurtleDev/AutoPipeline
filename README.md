@@ -15,10 +15,9 @@ In the future this will be distributed via NuGets.  For now, if you want to try 
 git clone https://github.com/aristurtledev/autopipeline
 ```
 
-2. Update your MonoGame .csproj file to reference the `AutoPipeline.props` and `AutoPipeline.targets` files
+2. Update your MonoGame .csproj file to reference the `AutoPipeline.targets` file
 
 ```xml
-<Import Project="path/to/autopipeline/source/AutoPipeline/AutoPipeline.props" />
 <Import Project="path/to/autopipeline/source/AutoPipeline/AutoPipeline.targets" />
 ```
 
@@ -33,12 +32,12 @@ The following tables shows the planned features and what's been implemented so f
 
 | Default Importer/Processors | Implemented |
 | --------------------------- | ----------- |
-| Effects                     | ❌           |
-| Fbx                         | ❌           |
-| SpriteFont                  | ❌           |
-| H.264 Video                 | ❌           |
-| Mp3                         | ❌           |
-| Ogg                         | ❌           |
+| Effects                     | ✅           |
+| Fbx                         | ✅           |
+| SpriteFont                  | ✅           |
+| H.264 Video                 | ✅           |
+| Mp3                         | ✅           |
+| Ogg                         | ✅           |
 | Open Asset Import Library   | ❌           |
 | Texture                     | ✅           |
 | Wav                         | ❌           |
