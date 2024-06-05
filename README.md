@@ -38,12 +38,12 @@ The following tables shows the planned features and what's been implemented so f
 | H.264 Video                 | ✅           |
 | Mp3                         | ✅           |
 | Ogg                         | ✅           |
-| Open Asset Import Library   | ❌           |
+| Open Asset Import Library   | ✅           |
 | Texture                     | ✅           |
-| Wav                         | ❌           |
-| Wmv                         | ❌           |
-| X                           | ❌           |
-| Xml                         | ❌           |
+| Wav                         | ✅           |
+| Wmv                         | ✅           |
+| X                           | ✅           |
+| Xml                         | ✅           |
 
 | Features                                              | Implemented |
 | ----------------------------------------------------- | ----------- |
