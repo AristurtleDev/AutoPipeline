@@ -25,7 +25,7 @@
      inkscape:document-units="mm"
      inkscape:zoom="0.73139029"
      inkscape:cx="421.11579"
-     inkscape:cy="92.289986"
+     inkscape:cy="92.289987"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -89,16 +89,7 @@
     <text
        xml:space="preserve"
        id="text1"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:'Cute Dino';-inkscape-font-specification:'Cute Dino';white-space:pre;shape-inside:url(#rect1);display:inline;fill:none;stroke:#000000;stroke-linecap:round;stroke-opacity:1"
-       sodipodi:insensitive="true" />
-    <rect
-       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:17.2535;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
-       id="rect12"
-       width="1454.7637"
-       height="921.53259"
-       x="-313.10233"
-       y="-343.18204"
-       sodipodi:insensitive="true" />
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:'Cute Dino';-inkscape-font-specification:'Cute Dino';white-space:pre;shape-inside:url(#rect1);display:inline;fill:none;stroke:#000000;stroke-linecap:round;stroke-opacity:1" />
     <rect
        style="fill:#6495ed;fill-opacity:1;stroke:#1752bd;stroke-width:20.77606299;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
        id="rect26"
@@ -112,8 +103,7 @@
     <g
        id="g22"
        style="display:inline;fill:#1752bd;fill-opacity:1;stroke:#1752bd;stroke-width:27.0803;stroke-dasharray:none;stroke-opacity:1"
-       transform="translate(-16,12)"
-       sodipodi:insensitive="true">
+       transform="translate(-16,12)">
       <path
          style="display:inline;fill:#1752bd;fill-opacity:1;stroke:#1752bd;stroke-width:27.0803;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
          d="M 299.42973,170.90738 631.67368,114.84976 535.96555,10.938072 284.38988,8.2035543 229.69952,60.159398 Z"
@@ -165,8 +155,7 @@
     </g>
     <g
        id="g11-0"
-       style="display:inline;stroke:#ffffff;stroke-width:27.0803;stroke-dasharray:none;stroke-opacity:1"
-       sodipodi:insensitive="true">
+       style="display:inline;stroke:#ffffff;stroke-width:27.0803;stroke-dasharray:none;stroke-opacity:1">
       <path
          style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:27.0803;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
          d="M 299.42973,170.90738 631.67368,114.84976 535.96555,10.938072 284.38988,8.2035543 229.69952,60.159398 Z"
@@ -218,8 +207,7 @@
     </g>
     <g
        id="g11"
-       style="display:inline;stroke:none;stroke-opacity:1"
-       sodipodi:insensitive="true">
+       style="display:inline;stroke:none;stroke-opacity:1">
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:153.398px;font-family:'Cute Dino';-inkscape-font-specification:'Cute Dino';fill:#000000;fill-opacity:1;stroke:none;stroke-width:15.672;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
