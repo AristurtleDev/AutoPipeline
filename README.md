@@ -1,6 +1,6 @@
 <h1 align="center">
 
-<img src="https://github.com/AristurtleDev/AutoPipeline/blob/make-it-faster/images/banner.png?raw=true" alt="AutoPipeline" width="256"/>
+<img src="https://github.com/AristurtleDev/AutoPipeline/blob/develop/images/banner.png?raw=true" alt="AutoPipeline" width="256"/>
 <br/>
 Automating the MonoGame Content Pipeline So You Don't Have To!
 </h1>
