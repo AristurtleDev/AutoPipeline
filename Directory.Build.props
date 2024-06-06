@@ -7,9 +7,7 @@
 
     <PropertyGroup>
 	<AutoPipelineVersion>0.0.1</AutoPipelineVersion>
-        <IsPrerelease Condition="'$(IS_PRERELEASE)' != ''">-prerelease</IsPrerelease>
-        <BuildNumber Condition="'$(BUILD_NUMBER)' != ''">.$(BUILD_NUMBER)</BuildNumber>
-        <Version>$(AutoPipelineVersion)$(IsPrerelease)$(BuildNumber)</Version>
+        <Version>$(AutoPipelineVersion)</Version>
     </PropertyGroup>
 
     <PropertyGroup>

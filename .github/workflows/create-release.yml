@@ -3,10 +3,6 @@ name: "Create Release"
 on:
   workflow_dispatch:
     inputs:
-      prerelease:
-        description: 'Is this a prerelease?'
-        required: true
-        default: 'true'
       source-feed:
         description: |
           Which source feed to publish to?
@@ -18,9 +14,6 @@ jobs:
   build:
     name: "Create Release"
     runs-on: ubuntu-latest
-    env:
-      IS_PRERELEASE:  ${{ inputs.prerelease == 'true' }}
-      BUILD_NUMBER: ${{ inputs.prerelease == 'true' && github.run_number || '' }}
 
     steps:
       - name: Clone Repository
