@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
-          path: ./.artifacts/source/package/release/*.nupkg
+          path: ./artifacts/source/package/release/AutoPipeline*.nupkg
 
   deploy:
     name: "Deploy NuGets"
