@@ -153,17 +153,23 @@
 	###################################################################################################################
 	-->
 	<ItemDefinitionGroup>
-		<MonoGameTextureAsset>
-			<Importer>TextureImporter</Importer>
-			<Processor>TextureProcessor</Processor>
-			<ColorKeyColor>255,0,255,255</ColorKeyColor>
-			<ColorKeyEnabled>false</ColorKeyEnabled>
-			<GenerateMipMaps>false</GenerateMipMaps>
-			<MakeSquare>false</MakeSquare>
-			<PremultiplyAlpha>false</PremultiplyAlpha>
-			<ResizeToPowerOfTwo>false</ResizeToPowerOfTwo>
-			<TextureFormat>color</TextureFormat>
-		</MonoGameTextureAsset>
+		<MonoGameDirectXAsset>
+			<Importer>XImporter</Importer>
+			<Processor>ModelProcessor</Processor>
+			<ColorKeyColor>255,255,255,255</ColorKeyColor>
+			<ColorKeyEnabled>True</ColorKeyEnabled>
+			<GenerateMipMaps>True</GenerateMipMaps>
+			<GenerateTangentFrames>False</GenerateTangentFrames>
+			<PremultiplyTextureAlpha>True</PremultiplyTextureAlpha>
+			<PremultiplyVertexColors>True</PremultiplyVertexColors>
+			<ResizeTexturesToPowerOfTwo>False</ResizeTexturesToPowerOfTwo>
+			<RotationX>0</RotationX>
+			<RotationY>0</RotationY>
+			<RotationZ>0</RotationZ>
+			<Scale>1</Scale>
+			<SwapWindingOrder>False</SwapWindingOrder>
+			<TextureFormat>Compressed</TextureFormat>
+		</MonoGameDirectXAsset>
 	</ItemDefinitionGroup>
 
 	<ItemDefinitionGroup>
@@ -181,7 +187,7 @@
 			<Processor>ModelProcessor</Processor>
 			<ColorKeyColor>255,255,255,255</ColorKeyColor>
 			<ColorKeyEnabled>True</ColorKeyEnabled>
-			<GenereateMipMaps>True</GenereateMipMaps>
+			<GenerateMipMaps>True</GenerateMipMaps>
 			<GenerateTangentFrames>False</GenerateTangentFrames>
 			<PremultiplyTextureAlpha>True</PremultiplyTextureAlpha>
 			<PremultiplyVertexColors>True</PremultiplyVertexColors>
@@ -196,15 +202,6 @@
 	</ItemDefinitionGroup>
 
 	<ItemDefinitionGroup>
-		<MonoGameSpriteFontAsset>
-			<Importer>FontDescriptionImporter</Importer>
-			<Processor>FontDescriptionProcessor</Processor>
-			<PremultiplyAlpha>True</PremultiplyAlpha>
-			<TextureFormat>Compressed</TextureFormat>
-		</MonoGameSpriteFontAsset>
-	</ItemDefinitionGroup>
-
-	<ItemDefinitionGroup>
 		<MonoGameH264Asset>
 			<Importer>H264Importer</Importer>
 			<Processor>VideoProcessor</Processor>
@@ -214,7 +211,7 @@
 	<ItemDefinitionGroup>
 		<MonoGameMp3Asset>
 			<Importer>Mp3Importer</Importer>
-			<Processor>SongProcessor</Processor>
+			<Processor>SoundEffectProcessor</Processor>
 			<Quality>Best</Quality>
 		</MonoGameMp3Asset>
 	</ItemDefinitionGroup>
@@ -222,7 +219,7 @@
 	<ItemDefinitionGroup>
 		<MonoGameOggAsset>
 			<Importer>OggImporter</Importer>
-			<Processor>SongProcessor</Processor>
+			<Processor>SoundEffectProcessor</Processor>
 			<Quality>Best</Quality>
 		</MonoGameOggAsset>
 	</ItemDefinitionGroup>
@@ -233,7 +230,7 @@
 			<Processor>ModelProcessor</Processor>
 			<ColorKeyColor>255,255,255,255</ColorKeyColor>
 			<ColorKeyEnabled>True</ColorKeyEnabled>
-			<GenereateMipMaps>True</GenereateMipMaps>
+			<GenerateMipMaps>True</GenerateMipMaps>
 			<GenerateTangentFrames>False</GenerateTangentFrames>
 			<PremultiplyTextureAlpha>True</PremultiplyTextureAlpha>
 			<PremultiplyVertexColors>True</PremultiplyVertexColors>
@@ -248,9 +245,32 @@
 	</ItemDefinitionGroup>
 
 	<ItemDefinitionGroup>
+		<MonoGameTextureAsset>
+			<Importer>TextureImporter</Importer>
+			<Processor>TextureProcessor</Processor>
+			<ColorKeyColor>255,0,255,255</ColorKeyColor>
+			<ColorKeyEnabled>false</ColorKeyEnabled>
+			<GenerateMipMaps>false</GenerateMipMaps>
+			<MakeSquare>false</MakeSquare>
+			<PremultiplyAlpha>false</PremultiplyAlpha>
+			<ResizeToPowerOfTwo>false</ResizeToPowerOfTwo>
+			<TextureFormat>color</TextureFormat>
+		</MonoGameTextureAsset>
+	</ItemDefinitionGroup>
+
+	<ItemDefinitionGroup>
+		<MonoGameSpriteFontAsset>
+			<Importer>FontDescriptionImporter</Importer>
+			<Processor>FontDescriptionProcessor</Processor>
+			<PremultiplyAlpha>True</PremultiplyAlpha>
+			<TextureFormat>Compressed</TextureFormat>
+		</MonoGameSpriteFontAsset>
+	</ItemDefinitionGroup>
+
+	<ItemDefinitionGroup>
 		<MonoGameWavAsset>
 			<Importer>WavImporter</Importer>
-			<Processor>SongProcessor</Processor>
+			<Processor>SoundEffectProcessor</Processor>
 			<Quality>Best</Quality>
 		</MonoGameWavAsset>
 	</ItemDefinitionGroup>
@@ -258,7 +278,7 @@
 	<ItemDefinitionGroup>
 		<MonoGameWmaAsset>
 			<Importer>WmaImporter</Importer>
-			<Processor>SongProcessor</Processor>
+			<Processor>SoundEffectProcessor</Processor>
 			<Quality>Best</Quality>
 		</MonoGameWmaAsset>
 	</ItemDefinitionGroup>
@@ -271,26 +291,6 @@
 	</ItemDefinitionGroup>
 
 	<ItemDefinitionGroup>
-		<MonoGameDirectXAsset>
-			<Importer>XImporter</Importer>
-			<Processor>ModelProcessor</Processor>
-			<ColorKeyColor>255,255,255,255</ColorKeyColor>
-			<ColorKeyEnabled>True</ColorKeyEnabled>
-			<GenereateMipMaps>True</GenereateMipMaps>
-			<GenerateTangentFrames>False</GenerateTangentFrames>
-			<PremultiplyTextureAlpha>True</PremultiplyTextureAlpha>
-			<PremultiplyVertexColors>True</PremultiplyVertexColors>
-			<ResizeTexturesToPowerOfTwo>False</ResizeTexturesToPowerOfTwo>
-			<RotationX>0</RotationX>
-			<RotationY>0</RotationY>
-			<RotationZ>0</RotationZ>
-			<Scale>1</Scale>
-			<SwapWindingOrder>False</SwapWindingOrder>
-			<TextureFormat>Compressed</TextureFormat>
-		</MonoGameDirectXAsset>
-	</ItemDefinitionGroup>
-
-	<ItemDefinitionGroup>
 		<MonoGameXmlAsset>
 			<Importer>XmlImporter</Importer>
 			<Processor>PassThroughProcessor</Processor>
@@ -299,454 +299,123 @@
 
 	<!-- 
 	###################################################################################################################
-	###	BuildMGCBCommand
-	###	A using task that takes the specified input and generates the dotnet mgcb command used to build the specified
-	###	asset.
-	###
-	###	Example
-	###	<BuildMGCBCommand _incrementalParam="true"
-	###					  _buildParam="Content/image.png"
-	###					  _outputDirParam="bin/Content"
-	###					  _intermediateDirParam="obj/Content"
-	###					  _workingDirParam="./"
-	###					  _processingParams="ColorKeyColor=255,0,255,255;ColorKeyEnabled=true"
-	###					  _importerParam="TextureImporter"
-	###					  _processorParam="TextureProcessor">
-	###		<Output PropertyName="MGCBCommand" TaskParameter="OutputString" />
-	###	</BuildMGCBCommand>
-	###
-	###	<Exec Command="$(MGCBCommand)" />
-	###################################################################################################################
-	-->
-	<UsingTask TaskName="BuildMGCBCommand"
-			   TaskFactory="RoslynCodeTaskFactory"
-			   AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
-		<ParameterGroup>
-			<_incrementalParam ParameterType="System.String" Required="true" />
-			<_buildParam ParameterType="System.String" Required="true" />
-			<_outputDirParam ParameterType="System.String" Required="true" />
-			<_intermediateDirParam ParameterType="System.String" Required="true" />
-			<_workingDirParam ParameterType="System.String" Required="true" />
-			<_processingParams ParameterType="System.String[]" Required="true" />
-			<_importerParam ParameterType="System.String" Required="true" />
-			<_processorParam ParameterType="System.String" Required="true" />
-			<OutputString ParameterType="System.String" Output="true" />
-		</ParameterGroup>
-		<Task>
-			<Code Type="Fragment" Language="cs">
-				<![CDATA[
-				OutputString = "dotnet mgcb";
-				OutputString += " /incremental:" + _incrementalParam;
-				OutputString += " /build:\"" + _buildParam.Replace('/', '\\') + "\"";
-				OutputString += " /outputDir:" + _outputDirParam.Replace('/', '\\');
-				OutputString += " /intermediateDir:" + _intermediateDirParam.Replace('/', '\\');
-				OutputString += " /workingDir:" + _workingDirParam.Replace('/', '\\');
-				OutputString += " /importer:" + _importerParam;
-				OutputString += " /processor:" + _processorParam;
-				foreach(var processingParam in _processingParams)
-				{
-					OutputString += " /processorParam:" + processingParam;
-				}
-				]]>
-			</Code>
-		</Task>
-	</UsingTask>
-
-	<!-- 
-	###################################################################################################################
 	###	Common properties that can be overwritten in the root project.
 	###################################################################################################################
 	-->
 	<Target Name="SetDefaultProperties">
 		<PropertyGroup>
-			<MGCBCompress Condition="'$(MGCBCompress)' == ''">false</MGCBCompress>
-			<MGCBIntermediateDir Condition="'$(MGCBIntermediateDir)' == ''">$(IntermediateOutputPath)</MGCBIntermediateDir>
-			<MGCBOutputDir Condition="'$(MGCBOutputDir)' == ''">$(OutDir)</MGCBOutputDir>
-			<MGCBPlatform Condition="'$(MGCBPlatform)' == ''">$(MonoGamePlatform)</MGCBPlatform>
-			<MGCBProfile Condition="'$(MGCBProfile)' == ''">Reach</MGCBProfile>
-			<MGCBIncremental Condition="'$(MGCBIncremental)' == ''">true</MGCBIncremental>
-			<MGCBWorkingDir Condition="'$(MGCBWorkingDir)' == ''">$(MSBuildProjectDirectory)</MGCBWorkingDir>
+			<_contentDir>$(MSBuildProjectDirectory)\Content</_contentDir>
+			<_contentFile>$(_contentDir)\Content.mgcb</_contentFile>
+			<_compress Condition="'$(_compress)' == ''">false</_compress>
+			<_intermediateDir Condition="'$(_intermediateDir)' == ''">$(IntermediateOutputPath)</_intermediateDir>
+			<_outputDir Condition="'$(_outputDir)' == ''">$(OutDir)</_outputDir>
+			<_platform Condition="'$(_platform)' == ''">$(MonoGamePlatform)</_platform>
+			<_profile Condition="'$(_profile)' == ''">Reach</_profile>
+			<_incremental Condition="'$(_incremental)' == ''">true</_incremental>
+			<_workingDir Condition="'$(_workingDir)' == ''">$(MSBuildProjectDirectory)</_workingDir>
 		</PropertyGroup>
 	</Target>
 
 	<!-- 
 	###################################################################################################################
-	###	Builds Texture Assets
+	###	Builds Content.mgcb file
 	###################################################################################################################
 	-->
-	<Target Name="BuildTextureAssets"
+	<Target Name="BuildTextures"
 			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameTextureAsset) != ''">
+			BeforeTargets="CollectContentReferences">
+
 		<ItemGroup>
-			<MonoGameTextureAssetFiles Include="@(MonoGameTextureAsset)" />
+			<_directXFiles Include="@(MonoGameDirectXAsset)" />
+			<_effectFiles Include="@(MonoGameEffectAsset)" />
+			<_fbxFiles Include="@(MonoGameFbxAsset)" />
+			<_h264Files Include="@(MonoGameH264Asset)" />
+			<_mp3Files Include="@(MonoGameMp3Asset)" />
+			<_oggFiles Include="@(MonoGameOggAsset)" />
+			<_openAssetFiles Include="@(MonoGameOpenAssetLibraryAsset)" />
+			<_spritefontFiles Include="@(MonoGameSpriteFontAsset)" />
+			<_textureFiles Include="@(MonoGameTextureAsset)" />
+			<_wavFiles Include="@(MonoGameWavAsset)" />
+			<_wmaFiles Include="@(MonoGameWmaAsset)" />
+			<_wmvFiles Include="@(MonoGameWmvAsset)" />
+			<_xmlFiles Include="@(MonoGameXmlAsset)" />
 		</ItemGroup>
 
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameTextureAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameTextureAssetFiles.Importer) 
-		/processor:%(MonoGameTextureAssetFiles.Processor) 
-		/processorParam:ColorKeyColor=%(MonoGameTextureAssetFiles.ColorKeyColor) 
-		/processorParam:ColorKeyEnabled=%(MonoGameTextureAssetFiles.ColorKeyEnabled) 
-		/processorParam:GenerateMipmaps=%(MonoGameTextureAssetFiles.GenerateMipmaps) 
-		/processorParam:PremultiplyAlpha=%(MonoGameTextureAssetFiles.PremultiplyAlpha) 
-		/processorParam:ResizeToPowerOfTwo=%(MonoGameTextureAssetFiles.ResizeToPowerOfTwo) 
-		/processorParam:MakeSquare=%(MonoGameTextureAssetFiles.MakeSquare) 
-		/processorParam:TextureFormat=%(MonoGameTextureAssetFiles.TextureFormat)" 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameTextureAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameTextureAssetFiles.Importer) /processor:%(MonoGameTextureAssetFiles.Processor) /processorParam:ColorKeyColor=%(MonoGameTextureAssetFiles.ColorKeyColor) /processorParam:ColorKeyEnabled=%(MonoGameTextureAssetFiles.ColorKeyEnabled) /processorParam:GenerateMipmaps=%(MonoGameTextureAssetFiles.GenerateMipmaps) /processorParam:PremultiplyAlpha=%(MonoGameTextureAssetFiles.PremultiplyAlpha) /processorParam:ResizeToPowerOfTwo=%(MonoGameTextureAssetFiles.ResizeToPowerOfTwo) /processorParam:MakeSquare=%(MonoGameTextureAssetFiles.MakeSquare) /processorParam:TextureFormat=%(MonoGameTextureAssetFiles.TextureFormat)" />
-	</Target>
+		<WriteLinesToFile File="$(_contentFile)" Lines="" Overwrite="true" />
+		<WriteLinesToFile File="$(_contentFile)" Lines="/outputDir:$(_outputDir)"  />
+		<WriteLinesToFile File="$(_contentFile)" Lines="/intermediateDir:$(_intermediateDir)"  />
+		<WriteLinesToFile File="$(_contentFile)" Lines="/platform:$(_platform)" />
+		<WriteLinesToFile File="$(_contentFile)" Lines="/config:" />
+		<WriteLinesToFile File="$(_contentFile)" Lines="/profile:$(_profile)" />
+		<WriteLinesToFile File="$(_contentFile)" Lines="/compress:$(_compress)" />
 
-	<!-- 
-	###################################################################################################################
-	###	Builds Effect Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildEffectAssets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameEffectAsset) != ''">
 		<ItemGroup>
-			<MonoGameEffectAssetFiles Include="@(MonoGameEffectAsset)" />
+			<_directXAssets	Include="%0D%0A#begin %(_directXFiles.Identity)%0D%0A/importer:%(_directXFiles.Importer)%0D%0A/processor:%(_directXFiles.Processor)%0D%0A/processorParam:ColorKeyColor=%(_directXFiles.ColorKeyColor)%0D%0A/processorParam:ColorKeyEnabled=%(_directXFiles.ColorKeyEnabled)%0D%0A/processorParam:GenerateMipmaps=%(_directXFiles.GenerateMipMaps)%0D%0A/processorParam:GenerateTangentFrames=%(_directXFiles.GenerateTangentFrames)%0D%0A/processorParam:PremultiplyTextureAlpha=%(_directXFiles.PremultiplyTextureAlpha)%0D%0A/processorParam:PremultiplyVertexColors=%(_directXFiles.PremultiplyVertexColors)%0D%0A/processorParam:ResizeTexturesToPowerOfTwo=%(_directXFiles.ResizeTexturesToPowerOfTwo)%0D%0A/processorParam:RotationX=%(_directXFiles.RotationX)%0D%0A/processorParam:RotationY=%(_directXFiles.RotationY)%0D%0A/processorParam:RotationZ=%(_directXFiles.RotationZ)%0D%0A/processorParam:Scale=%(_directXFiles.Scale)%0D%0A/processorParam:SwapWindingOrder=%(_directXFiles.SwapWindingOrder)%0D%0A/processorParam:TextureFormat=%(_directXFiles.TextureFormat)%0D%0A/build:%(_directXFiles.Identity)" />
+			<_effectAssets Include="%0D%0A#begin %(_effectFiles.Identity)%0D%0A/importer:%(_effectFiles.Importer)%0D%0A/processor:%(_effectFiles.Processor)%0D%0A/processorParam:Importer=%(_effectFiles.Importer)%0D%0A/processorParam:Processor=%(_effectFiles.Processor)%0D%0A/processorParam:DebugMode=%(_effectFiles.DebugMode)%0D%0A/processorParam:Defines=%(_effectFiles.Defines)%0D%0A/processorParam:PremultiplyTextureAlpha=%(_effectFiles.PremultiplyTextureAlpha)%0D%0A/processorParam:PremultiplyVertexColors=%(_effectFiles.PremultiplyVertexColors)%0D%0A/processorParam:ResizeTexturesToPowerOfTwo=%(_effectFiles.ResizeTexturesToPowerOfTwo)%0D%0A/processorParam:RotationX=%(_effectFiles.RotationX)%0D%0A/processorParam:RotationY=%(_effectFiles.RotationY)%0D%0A/processorParam:RotationZ=%(_effectFiles.RotationZ)%0D%0A/processorParam:Scale=%(_effectFiles.Scale)%0D%0A/processorParam:SwapWindingOrder=%(_effectFiles.SwapWindingOrder)%0D%0A/processorParam:TextureFormat=%(_effectFiles.TextureFormat)%0D%0A/build:%(_effectFiles.Identity)" />
+			<_fbxAssets	Include="%0D%0A#begin %(_fbxFiles.Identity)%0D%0A/importer:%(_fbxFiles.Importer)%0D%0A/processor:%(_fbxFiles.Processor)%0D%0A/processorParam:ColorKeyColor=%(_fbxFiles.ColorKeyColor)%0D%0A/processorParam:ColorKeyEnabled=%(_fbxFiles.ColorKeyEnabled)%0D%0A/processorParam:GenerateMipmaps=%(_fbxFiles.GenerateMipMaps)%0D%0A/processorParam:GenerateTangentFrames=%(_fbxFiles.GenerateTangentFrames)%0D%0A/processorParam:PremultiplyTextureAlpha=%(_fbxFiles.PremultiplyTextureAlpha)%0D%0A/processorParam:PremultiplyVertexColors=%(_fbxFiles.PremultiplyVertexColors)%0D%0A/processorParam:ResizeTexturesToPowerOfTwo=%(_fbxFiles.ResizeTexturesToPowerOfTwo)%0D%0A/processorParam:RotationX=%(_fbxFiles.RotationX)%0D%0A/processorParam:RotationY=%(_fbxFiles.RotationY)%0D%0A/processorParam:RotationZ=%(_fbxFiles.RotationZ)%0D%0A/processorParam:Scale=%(_fbxFiles.Scale)%0D%0A/processorParam:SwapWindingOrder=%(_fbxFiles.SwapWindingOrder)%0D%0A/processorParam:TextureFormat=%(_fbxFiles.TextureFormat)%0D%0A/build:%(_fbxFiles.Identity)" />
+			<_h264Assets Include="%0D%0A#begin %(_h264Files.Identity)%0D%0A/importer:%(_h264Files.Importer)%0D%0A/processor:%(_h264Files.Processor)%0D%0A/processorParam:SwapWindingOrder=%(_h264Files.SwapWindingOrder)%0D%0A/build:%(_h264Files.Identity)" />
+			<_mp3Assets	Include="%0D%0A#begin %(_mp3Files.Identity)%0D%0A/importer:%(_mp3Files.Importer)%0D%0A/processor:%(_mp3Files.Processor)%0D%0A/processorParam:Importer=%(_mp3Files.Importer)%0D%0A/processorParam:Processor=%(_mp3Files.Processor)%0D%0A/processorParam:Quality=%(_mp3Files.Quality)%0D%0A/build:%(_mp3Files.Identity)" />
+			<_oggAssets	Include="%0D%0A#begin %(_oggFiles.Identity)%0D%0A/importer:%(_oggFiles.Importer)%0D%0A/processor:%(_oggFiles.Processor)%0D%0A/processorParam:Importer=%(_oggFiles.Importer)%0D%0A/processorParam:Processor=%(_oggFiles.Processor)%0D%0A/processorParam:Quality=%(_oggFiles.Quality)%0D%0A/build:%(_oggFiles.Identity)" />
+			<_openAssetAssets Include="%0D%0A#begin %(_openAssetFiles.Identity)%0D%0A/importer:%(_openAssetFiles.Importer)%0D%0A/processor:%(_openAssetFiles.Processor)%0D%0A/processorParam:ColorKeyColor=%(_openAssetFiles.ColorKeyColor)%0D%0A/processorParam:ColorKeyEnabled=%(_openAssetFiles.ColorKeyEnabled)%0D%0A/processorParam:GenerateMipmaps=%(_openAssetFiles.GenerateMipMaps)%0D%0A/processorParam:GenerateTangentFrames=%(_openAssetFiles.GenerateTangentFrames)%0D%0A/processorParam:PremultiplyTextureAlpha=%(_openAssetFiles.PremultiplyTextureAlpha)%0D%0A/processorParam:PremultiplyVertexColors=%(_openAssetFiles.PremultiplyVertexColors)%0D%0A/processorParam:ResizeTexturesToPowerOfTwo=%(_openAssetFiles.ResizeTexturesToPowerOfTwo)%0D%0A/processorParam:RotationX=%(_openAssetFiles.RotationX)%0D%0A/processorParam:RotationY=%(_openAssetFiles.RotationY)%0D%0A/processorParam:RotationZ=%(_openAssetFiles.RotationZ)%0D%0A/processorParam:Scale=%(_openAssetFiles.Scale)%0D%0A/processorParam:SwapWindingOrder=%(_openAssetFiles.SwapWindingOrder)%0D%0A/processorParam:TextureFormat=%(_openAssetFiles.TextureFormat)%0D%0A/build:%(_openAssetFiles.Identity)" />
+			<_textureAssets Include="%0D%0A#identity:%(_textureFiles.Identity)%0D%0A#begin $([MSBuild]::MakeRelative($(_contentDir), %(_textureFiles.Identity)))%0D%0A/importer:%(_textureFiles.Importer)%0D%0A/processor:%(_textureFiles.Processor)%0D%0A/processorParam:ColorKeyColor=%(_textureFiles.ColorKeyColor)%0D%0A/processorParam:ColorKeyEnabled=%(_textureFiles.ColorKeyEnabled)%0D%0A/processorParam:GenerateMipmaps=%(_textureFiles.GenerateMipMaps)%0D%0A/processorParam:PremultiplyAlpha=%(_textureFiles.PremultiplyAlpha)%0D%0A/processorParam:ResizeToPowerOfTwo=%(_textureFiles.ResizeToPowerOfTwo)%0D%0A/processorParam:MakeSquare=%(_textureFiles.MakeSquare)%0D%0A/processorParam:TextureFormat=%(_textureFiles.TextureFormat)%0D%0A/build:$([MSBuild]::MakeRelative($(_contentDir), %(_textureFiles.Identity)))" />
+			<_spritefontAssets Include="%0D%0A#begin %(_spritefontFiles.Identity)%0D%0A/importer:%(_spritefontFiles.Importer)%0D%0A/processor:%(_spritefontFiles.Processor)%0D%0A/processorParam:Importer=%(_spritefontFiles.Importer)%0D%0A/processorParam:Processor=%(_spritefontFiles.Processor)%0D%0A/processorParam:PremultiplyAlpha=%(_spritefontFiles.PremultiplyAlpha)%0D%0A/processorParam:TextureFormat=%(_spritefontFiles.TextureFormat)%0D%0A/build:%(_spritefontFiles.Identity)" />
+			<_wavAssets	Include="%0D%0A#begin %(_wavFiles.Identity)%0D%0A/importer:%(_wavFiles.Importer)%0D%0A/processor:%(_wavFiles.Processor)%0D%0A/processorParam:Importer=%(_wavFiles.Importer)%0D%0A/processorParam:Processor=%(_wavFiles.Processor)%0D%0A/processorParam:Quality=%(_wavFiles.Quality)%0D%0A/build:%(_wavFiles.Identity)" />
+			<_wmaAssets	Include="%0D%0A#begin %(_wmaFiles.Identity)%0D%0A/importer:%(_wmaFiles.Importer)%0D%0A/processor:%(_wmaFiles.Processor)%0D%0A/processorParam:Importer=%(_wmaFiles.Importer)%0D%0A/processorParam:Processor=%(_wmaFiles.Processor)%0D%0A/processorParam:Quality=%(_wmaFiles.Quality)%0D%0A/build:%(_wmaFiles.Identity)" />
+			<_wmvAssets	Include="%0D%0A#begin %(_wmvFiles.Identity)%0D%0A/importer:%(_wmvFiles.Importer)%0D%0A/processor:%(_wmvFiles.Processor)%0D%0A/processorParam:SwapWindingOrder=%(_wmvFiles.SwapWindingOrder)%0D%0A/build:%(_wmvFiles.Identity)" />
+			<_xmlAssets	Include="%0D%0A#begin %(_xmlFiles.Identity)%0D%0A/importer:%(_xmlFiles.Importer)%0D%0A/processor:%(_xmlFiles.Processor)%0D%0A/build:%(_xmlFiles.Identity)" />
 		</ItemGroup>
 
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameEffectAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameEffectAssetFiles.Importer) 
-		/processor:%(MonoGameEffectAssetFiles.Processor) 
-		/processorParam:DebugMode=%(MonoGameEffectAssetFiles.DebugMode) 
-		/processorParam:Defines=%(MonoGameEffectAssetFiles.Defines) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameEffectAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameEffectAssetFiles.Importer) /processor:%(MonoGameEffectAssetFiles.Processor) /processorParam:DebugMode=%(MonoGameEffectAssetFiles.DebugMode) /processorParam:Defines=%(MonoGameEffectAssetFiles.Defines)" />
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_directXAssets)"
+						  Condition="@(MonoGameDirectXAsset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_effectAssets)"
+						  Condition="@(MonoGameEffectAsset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_fbxAssets)"
+						  Condition="@(MonoGameFbxAsset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_h264Assets)"
+						  Condition="@(MonoGameH264Asset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_mp3Assets)"
+						  Condition="@(MonoGameMp3Asset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_oggAssets)"
+						  Condition="@(MonoGameOggAsset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_openAssetAssets)"
+						  Condition="@(MonoGameOpenAssetLibraryAsset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_textureAssets)"
+						  Condition="@(MonoGameTextureAsset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_spritefontAssets)"
+						  Condition="@(MonoGameSpriteFontAsset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_wavAssets)"
+						  Condition="@(MonoGameWavAsset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_wmaAssets)"
+						  Condition="@(MonoGameWmaAsset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_wmvAssets)"
+						  Condition="@(MonoGameWmvAsset) != ''" />
+
+		<WriteLinesToFile File="$(_contentFile)"
+						  Lines="@(_xmlAssets)"
+						  Condition="@(MonoGameXmlAsset) != ''" />
+
 	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds FBX Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildFbxAssets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameFbxAsset) != ''">
-		<ItemGroup>
-			<MonoGameFbxAssetFiles Include="@(MonoGameFbxAsset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameFbxAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameFbxAssetFiles.Importer) 
-		/processor:%(MonoGameFbxAssetFiles.Processor) 
-		/processorParam:ColorKeyColor=%(MonoGameFbxAssetFiles.ColorKeyColor) 
-		/processorParam:ColorKeyEnabled=%(MonoGameFbxAssetFiles.ColorKeyEnabled) 
-		/processorParam:GenereateMipMaps=%(MonoGameFbxAssetFiles.GenereateMipMaps) 
-		/processorParam:GenerateTangentFrames=%(MonoGameFbxAssetFiles.GenerateTangentFrames) 
-		/processorParam:PremultiplyTextureAlpha=%(MonoGameFbxAssetFiles.PremultiplyTextureAlpha) 
-		/processorParam:PremultiplyVertexColors=%(MonoGameFbxAssetFiles.PremultiplyVertexColors) 
-		/processorParam:ResizeTexturesToPowerOfTwo=%(MonoGameFbxAssetFiles.ResizeTexturesToPowerOfTwo) 
-		/processorParam:RotationX=%(MonoGameFbxAssetFiles.RotationX) 
-		/processorParam:RotationY=%(MonoGameFbxAssetFiles.RotationY) 
-		/processorParam:RotationZ=%(MonoGameFbxAssetFiles.RotationZ) 
-		/processorParam:SwapWindingOrder=%(MonoGameFbxAssetFiles.SwapWindingOrder) 
-		/processorParam:TextureFormat=%(MonoGameFbxAssetFiles.TextureFormat) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameFbxAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameFbxAssetFiles.Importer) /processor:%(MonoGameFbxAssetFiles.Processor) /processorParam:ColorKeyColor=%(MonoGameFbxAssetFiles.ColorKeyColor) /processorParam:ColorKeyEnabled=%(MonoGameFbxAssetFiles.ColorKeyEnabled) /processorParam:GenereateMipMaps=%(MonoGameFbxAssetFiles.GenereateMipMaps) /processorParam:GenerateTangentFrames=%(MonoGameFbxAssetFiles.GenerateTangentFrames) /processorParam:PremultiplyTextureAlpha=%(MonoGameFbxAssetFiles.PremultiplyTextureAlpha) /processorParam:PremultiplyVertexColors=%(MonoGameFbxAssetFiles.PremultiplyVertexColors) /processorParam:ResizeTexturesToPowerOfTwo=%(MonoGameFbxAssetFiles.ResizeTexturesToPowerOfTwo) /processorParam:RotationX=%(MonoGameFbxAssetFiles.RotationX) /processorParam:RotationY=%(MonoGameFbxAssetFiles.RotationY) /processorParam:RotationZ=%(MonoGameFbxAssetFiles.RotationZ) /processorParam:SwapWindingOrder=%(MonoGameFbxAssetFiles.SwapWindingOrder) /processorParam:TextureFormat=%(MonoGameFbxAssetFiles.TextureFormat) "/>
-	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds SpriteFont Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildSpriteFontAssets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameSpriteFontAsset) != ''">
-		<ItemGroup>
-			<MonoGameSpriteFontAssetFiles Include="@(MonoGameSpriteFontAsset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameSpriteFontAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameSpriteFontAssetFiles.Importer) 
-		/processor:%(MonoGameSpriteFontAssetFiles.Processor) 
-		/processorParam:PremultiplyAlpha=%(MonoGameSpriteFontAssetFiles.PremultiplyAlpha) 
-		/processorParam:TextureFormat=%(MonoGameSpriteFontAssetFiles.TextureFormat) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameSpriteFontAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameSpriteFontAssetFiles.Importer) /processor:%(MonoGameSpriteFontAssetFiles.Processor) /processorParam:PremultiplyAlpha=%(MonoGameSpriteFontAssetFiles.PremultiplyAlpha) /processorParam:TextureFormat=%(MonoGameSpriteFontAssetFiles.TextureFormat) "/>
-	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds H264 Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildH264Assets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameH264Asset) != ''">
-		<ItemGroup>
-			<MonoGameH264AssetFiles Include="@(MonoGameH264Asset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameH264AssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameH264AssetFiles.Importer) 
-		/processor:%(MonoGameH264AssetFiles.Processor) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameH264AssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameH264AssetFiles.Importer) /processor:%(MonoGameH264AssetFiles.Processor) "/>
-	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds Mp3 Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildMp3Assets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameMp3Asset) != ''">
-		<ItemGroup>
-			<MonoGameMp3AssetFiles Include="@(MonoGameMp3Asset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameMp3AssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameMp3AssetFiles.Importer) 
-		/processor:%(MonoGameMp3AssetFiles.Processor) 
-		/processorParam:Quality=%(MonoGameMp3AssetFiles.Quality) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameMp3AssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameMp3AssetFiles.Importer) /processor:%(MonoGameMp3AssetFiles.Processor) /processorParam:Quality=%(MonoGameMp3AssetFiles.Quality) "/>
-	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds Ogg Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildOggAssets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameOggAsset) != ''">
-		<ItemGroup>
-			<MonoGameOggAssetFiles Include="@(MonoGameOggAsset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameOggAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameOggAssetFiles.Importer) 
-		/processor:%(MonoGameMp3AssetFiles.Processor) 
-		/processorParam:Quality=%(MonoGameOggAssetFiles.Quality) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameOggAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameOggAssetFiles.Importer) /processor:%(MonoGameMp3AssetFiles.Processor) /processorParam:Quality=%(MonoGameOggAssetFiles.Quality) "/>
-	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds Open Asset Library Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildOpenAssetLibraryAssets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameOpenAssetLibraryAsset) != ''">
-		<ItemGroup>
-			<MonoGameOpenAssetLibraryAssetFiles Include="@(MonoGameOpenAssetLibraryAsset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameOpenAssetLibraryAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameOpenAssetLibraryAssetFiles.Importer) 
-		/processor:%(MonoGameOpenAssetLibraryAssetFiles.Processor) 
-		/processorParam:ColorKeyColor=%(MonoGameOpenAssetLibraryAssetFiles.ColorKeyColor) 
-		/processorParam:ColorKeyEnabled=%(MonoGameOpenAssetLibraryAssetFiles.ColorKeyEnabled) 
-		/processorParam:GenereateMipMaps=%(MonoGameOpenAssetLibraryAssetFiles.GenereateMipMaps) 
-		/processorParam:GenerateTangentFrames=%(MonoGameOpenAssetLibraryAssetFiles.GenerateTangentFrames) 
-		/processorParam:PremultiplyTextureAlpha=%(MonoGameOpenAssetLibraryAssetFiles.PremultiplyTextureAlpha) 
-		/processorParam:PremultiplyVertexColors=%(MonoGameOpenAssetLibraryAssetFiles.PremultiplyVertexColors) 
-		/processorParam:ResizeTexturesToPowerOfTwo=%(MonoGameOpenAssetLibraryAssetFiles.ResizeTexturesToPowerOfTwo) 
-		/processorParam:RotationX=%(MonoGameOpenAssetLibraryAssetFiles.RotationX) 
-		/processorParam:RotationY=%(MonoGameOpenAssetLibraryAssetFiles.RotationY) 
-		/processorParam:RotationZ=%(MonoGameOpenAssetLibraryAssetFiles.RotationZ) 
-		/processorParam:SwapWindingOrder=%(MonoGameOpenAssetLibraryAssetFiles.SwapWindingOrder) 
-		/processorParam:TextureFormat=%(MonoGameOpenAssetLibraryAssetFiles.TextureFormat) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameOpenAssetLibraryAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameOpenAssetLibraryAssetFiles.Importer) /processor:%(MonoGameOpenAssetLibraryAssetFiles.Processor) /processorParam:ColorKeyColor=%(MonoGameOpenAssetLibraryAssetFiles.ColorKeyColor) /processorParam:ColorKeyEnabled=%(MonoGameOpenAssetLibraryAssetFiles.ColorKeyEnabled) /processorParam:GenereateMipMaps=%(MonoGameOpenAssetLibraryAssetFiles.GenereateMipMaps) /processorParam:GenerateTangentFrames=%(MonoGameOpenAssetLibraryAssetFiles.GenerateTangentFrames) /processorParam:PremultiplyTextureAlpha=%(MonoGameOpenAssetLibraryAssetFiles.PremultiplyTextureAlpha) /processorParam:PremultiplyVertexColors=%(MonoGameOpenAssetLibraryAssetFiles.PremultiplyVertexColors) /processorParam:ResizeTexturesToPowerOfTwo=%(MonoGameOpenAssetLibraryAssetFiles.ResizeTexturesToPowerOfTwo) /processorParam:RotationX=%(MonoGameOpenAssetLibraryAssetFiles.RotationX) /processorParam:RotationY=%(MonoGameOpenAssetLibraryAssetFiles.RotationY) /processorParam:RotationZ=%(MonoGameOpenAssetLibraryAssetFiles.RotationZ) /processorParam:SwapWindingOrder=%(MonoGameOpenAssetLibraryAssetFiles.SwapWindingOrder) /processorParam:TextureFormat=%(MonoGameOpenAssetLibraryAssetFiles.TextureFormat) "/>
-	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds Wav Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildWavAssets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameWavAsset) != ''">
-		<ItemGroup>
-			<MonoGameWavAssetFiles Include="@(MonoGameWavAsset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameWavAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameWavAssetFiles.Importer) 
-		/processor:%(MonoGameWavAssetFiles.Processor) 
-		/processorParam:Quality=%(MonoGameWavAssetFiles.Quality) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameWavAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameWavAssetFiles.Importer) /processor:%(MonoGameWavAssetFiles.Processor) /processorParam:Quality=%(MonoGameWavAssetFiles.Quality) "/>
-	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds Wma Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildWmaAssets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameWmaAsset) != ''">
-		<ItemGroup>
-			<MonoGameWmaAssetFiles Include="@(MonoGameWmaAsset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameWmaAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameWmaAssetFiles.Importer) 
-		/processor:%(MonoGameWmaAssetFiles.Processor) 
-		/processorParam:Quality=%(MonoGameWmaAssetFiles.Quality) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameWmaAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameWmaAssetFiles.Importer) /processor:%(MonoGameWmaAssetFiles.Processor) /processorParam:Quality=%(MonoGameWmaAssetFiles.Quality) "/>
-	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds Wmv Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildWmvAssets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameWmvAsset) != ''">
-		<ItemGroup>
-			<MonoGameWmvAssetFiles Include="@(MonoGameWmvAsset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameWmvAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameWmvAssetFiles.Importer) 
-		/processor:%(MonoGameWmvAssetFiles.Processor) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameWmvAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameWmvAssetFiles.Importer) /processor:%(MonoGameWmvAssetFiles.Processor) "/>
-	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds DirectX Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildDirectXAssets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameDirectXAsset) != ''">
-		<ItemGroup>
-			<MonoGameDirectXAssetFiles Include="@(MonoGameDirectXAsset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameDirectXAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameDirectXAssetFiles.Importer) 
-		/processor:%(MonoGameDirectXAssetFiles.Processor) 
-		/processorParam:ColorKeyColor=%(MonoGameDirectXAssetFiles.ColorKeyColor) 
-		/processorParam:ColorKeyEnabled=%(MonoGameDirectXAssetFiles.ColorKeyEnabled) 
-		/processorParam:GenereateMipMaps=%(MonoGameDirectXAssetFiles.GenereateMipMaps) 
-		/processorParam:GenerateTangentFrames=%(MonoGameDirectXAssetFiles.GenerateTangentFrames) 
-		/processorParam:PremultiplyTextureAlpha=%(MonoGameDirectXAssetFiles.PremultiplyTextureAlpha) 
-		/processorParam:PremultiplyVertexColors=%(MonoGameDirectXAssetFiles.PremultiplyVertexColors) 
-		/processorParam:ResizeTexturesToPowerOfTwo=%(MonoGameDirectXAssetFiles.ResizeTexturesToPowerOfTwo) 
-		/processorParam:RotationX=%(MonoGameDirectXAssetFiles.RotationX) 
-		/processorParam:RotationY=%(MonoGameDirectXAssetFiles.RotationY) 
-		/processorParam:RotationZ=%(MonoGameDirectXAssetFiles.RotationZ) 
-		/processorParam:SwapWindingOrder=%(MonoGameDirectXAssetFiles.SwapWindingOrder) 
-		/processorParam:TextureFormat=%(MonoGameDirectXAssetFiles.TextureFormat) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameDirectXAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameDirectXAssetFiles.Importer) /processor:%(MonoGameDirectXAssetFiles.Processor) /processorParam:ColorKeyColor=%(MonoGameDirectXAssetFiles.ColorKeyColor) /processorParam:ColorKeyEnabled=%(MonoGameDirectXAssetFiles.ColorKeyEnabled) /processorParam:GenereateMipMaps=%(MonoGameDirectXAssetFiles.GenereateMipMaps) /processorParam:GenerateTangentFrames=%(MonoGameDirectXAssetFiles.GenerateTangentFrames) /processorParam:PremultiplyTextureAlpha=%(MonoGameDirectXAssetFiles.PremultiplyTextureAlpha) /processorParam:PremultiplyVertexColors=%(MonoGameDirectXAssetFiles.PremultiplyVertexColors) /processorParam:ResizeTexturesToPowerOfTwo=%(MonoGameDirectXAssetFiles.ResizeTexturesToPowerOfTwo) /processorParam:RotationX=%(MonoGameDirectXAssetFiles.RotationX) /processorParam:RotationY=%(MonoGameDirectXAssetFiles.RotationY) /processorParam:RotationZ=%(MonoGameDirectXAssetFiles.RotationZ) /processorParam:SwapWindingOrder=%(MonoGameDirectXAssetFiles.SwapWindingOrder) /processorParam:TextureFormat=%(MonoGameDirectXAssetFiles.TextureFormat) "/>
-	</Target>
-
-	<!-- 
-	###################################################################################################################
-	###	Builds Xml Assets
-	###################################################################################################################
-	-->
-	<Target Name="BuildXmlAssets"
-			DependsOnTargets="SetDefaultProperties"
-			Condition="@(MonoGameXmlAsset) != ''">
-		<ItemGroup>
-			<MonoGameXmlAssetFiles Include="@(MonoGameXmlAsset)" />
-		</ItemGroup>
-
-		<!--
-		<Exec Command="dotnet mgcb 
-		/build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameXmlAssetFiles.Identity)))').Replace('\', '/'))&quot; 
-		/incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) 
-		/outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) 
-		/intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) 
-		/importer:%(MonoGameXmlAssetFiles.Importer) 
-		/processor:%(MonoGameXmlAssetFiles.Processor) 
-		"/>
-		-->
-		<Exec Command="dotnet mgcb /build:&quot;$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), %(MonoGameXmlAssetFiles.Identity)))').Replace('\', '/'))&quot; /incremental:$(MGCBIncremental) /workingDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBWorkingDir)))').Replace('\', '/')) /outputDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBOutputDir)))').Replace('\', '/')) /intermediateDir:$([System.String]::new('$([MSBuild]::MakeRelative($(MSBuildProjectDirectory), $(MGCBIntermediateDir)))').Replace('\', '/')) /importer:%(MonoGameXmlAssetFiles.Importer) /processor:%(MonoGameXmlAssetFiles.Processor) "/>
-	</Target>
-
-
-	<Target Name="BuildAssets"
-			DependsOnTargets="BuildTextureAssets;BuildEffectAssets;BuildFbxAssets;BuildSpriteFontAssets;BuildH264Assets;BuildMp3Assets;BuildOggAssets;BuildOpenAssetLibraryAssets;BuildWavAssets;BuildWmaAssets;BuildWmvAssets;BuildDirectXAssets;BuildXmlAssets"
-			BeforeTargets="Build" />
 </Project>

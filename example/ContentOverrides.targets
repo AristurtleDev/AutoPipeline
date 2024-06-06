@@ -1,0 +1,10 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	
+	<ItemGroup>
+		<MonoGameTextureAsset Update="Content\aristurtle.png">
+			<ColorKeyEnabled>true</ColorKeyEnabled>
+			<GenerateMipMaps>true</GenerateMipMaps>
+		</MonoGameTextureAsset>
+	</ItemGroup>
+	
+</Project>

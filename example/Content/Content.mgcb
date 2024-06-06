@@ -1,0 +1,46 @@
+/outputDir:bin\Debug\net6.0\
+/intermediateDir:obj\Debug\net6.0\
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:false
+
+#begin C:\Users\Aristurtle\Downloads\auto-pipeline\auto-pipeline\example\Content\myShaders.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:Importer=EffectImporter
+/processorParam:Processor=EffectProcessor
+/processorParam:DebugMode=Auto
+/processorParam:Defines=
+/processorParam:PremultiplyTextureAlpha=
+/processorParam:PremultiplyVertexColors=
+/processorParam:ResizeTexturesToPowerOfTwo=
+/processorParam:RotationX=
+/processorParam:RotationY=
+/processorParam:RotationZ=
+/processorParam:Scale=
+/processorParam:SwapWindingOrder=
+/processorParam:TextureFormat=
+/build:C:\Users\Aristurtle\Downloads\auto-pipeline\auto-pipeline\example\Content\myShaders.fx
+
+#identity:C:\Users\Aristurtle\Downloads\auto-pipeline\auto-pipeline\example\Content\aristurtle.png
+#begin aristurtle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=true
+/processorParam:GenerateMipmaps=true
+/processorParam:PremultiplyAlpha=false
+/processorParam:ResizeToPowerOfTwo=false
+/processorParam:MakeSquare=false
+/processorParam:TextureFormat=color
+/build:aristurtle.png
+
+#begin C:\Users\Aristurtle\Downloads\auto-pipeline\auto-pipeline\example\Content\arial.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:Importer=FontDescriptionImporter
+/processorParam:Processor=FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:C:\Users\Aristurtle\Downloads\auto-pipeline\auto-pipeline\example\Content\arial.spritefont
