@@ -24,7 +24,7 @@ You can install this in your MonoGame project either manually from source or via
 Add the NuGet package to your MonoGame project
 
 ```
-dotnet add package AutoPipeline --version 0.0.1
+dotnet add package AutoPipeline --version 0.0.2
 ```
 
 ### Manual Installation
