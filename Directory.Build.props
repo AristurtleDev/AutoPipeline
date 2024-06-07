@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-	<AutoPipelineVersion>0.0.1</AutoPipelineVersion>
+	<AutoPipelineVersion>0.0.2</AutoPipelineVersion>
         <Version>$(AutoPipelineVersion)</Version>
     </PropertyGroup>
 
