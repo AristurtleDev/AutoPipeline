@@ -253,18 +253,19 @@ Finally, in the `ContentOverrides.targets` file, add the overrides for each spec
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	
-	<ItemGroup>
-		<MonoGameTextureAsset Update="Content\aristurtle.png">
-			<ColorKeyEnabled>true</ColorKeyEnabled>
-			<GenerateMipMaps>true</GenerateMipMaps>
-		</MonoGameTextureAsset>
-	</ItemGroup>
-	
+	<Target Name="AutoPipelineOverrides" AfterTargets="SetDefaultProperties">
+		<ItemGroup>
+			<MonoGameTextureAsset Update="Content\aristurtle.png">
+				<ColorKeyEnabled>true</ColorKeyEnabled>
+				<GenerateMipMaps>true</GenerateMipMaps>
+			</MonoGameTextureAsset>
+		</ItemGroup>
+	</Target>
 </Project>
 
 ```
 
+1. A `<Target>` must be defined that executes `AfterTargets="SetDefaultProperties"`.
 1. Overrides must be children inside the `<ItemGroup>` node.
 2. Use the Build Action type, for instance `MonoGameTextureAsset` is used in the example.  See the sections under Usage above for the build action type of the various content files
 3. The `Update` attribute must be used, and should point to the path of the content file relative from the root of the project directory
